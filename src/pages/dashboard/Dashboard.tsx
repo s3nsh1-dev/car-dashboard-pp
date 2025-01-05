@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Typography } from "@mui/material";
 const Dashboard: React.FC = () => {
   return (
     <div>
@@ -7,6 +7,7 @@ const Dashboard: React.FC = () => {
         <h1 className='text-4xl text-white font-bold'>
           Tailwind CSS is Working!
         </h1>
+        <Typography variant='h1'> hello i am MUI</Typography>
       </div>
     </div>
   );

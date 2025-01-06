@@ -11,8 +11,7 @@ const App: React.FC = () => {
       <NavigationBar />
       <Box
         sx={{
-          mt: 13, // Gap between navbar and page content
-          px: 2, // Padding on the sides
+          mt: 12, // Gap between navbar and page content
         }}
       >
         <Routes>

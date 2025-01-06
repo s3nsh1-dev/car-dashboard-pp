@@ -8,20 +8,14 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import TraverseBox from "./TraverseBox";
-import NavbarMobile from "./mobile/NavbarMobile";
+import NavbarIconToggle from "./mobile/NavbarIconToggle";
+import DropdownMobileMenu from "./mobile/DropdownMobileMenu";
 
 const toolbarStyles = {
   justifyContent: "space-between",
 };
 
-const mobileNavStyles = {
-  display: { xs: "flex", sm: "none" },
-  flexDirection: "column",
-  alignItems: "center",
-  backgroundColor: "grey",
-};
-
-const NavbarDesktop = () => {
+const NavigationBar = () => {
   const theme = useTheme();
   const isMobileView = useMediaQuery(theme.breakpoints.down("sm"));
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -41,13 +35,14 @@ const NavbarDesktop = () => {
         <Box sx={{ display: { xs: "none", sm: "flex" } }}>
           <TraverseBox />
         </Box>
-        <NavbarMobile showDropdown={toggleMobileView} />
+        <NavbarIconToggle
+          mobileOpen={mobileOpen}
+          showDropdown={toggleMobileView}
+        />
       </Toolbar>
-      <Box gap={2} sx={mobileNavStyles} padding={mobileOpen ? 2 : 0}>
-        {mobileOpen && <TraverseBox />}
-      </Box>
+      <DropdownMobileMenu mobileOpen={mobileOpen} />
     </AppBar>
   );
 };
 
-export default NavbarDesktop;
+export default NavigationBar;

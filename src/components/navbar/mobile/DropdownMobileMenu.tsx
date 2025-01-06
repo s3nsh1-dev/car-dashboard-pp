@@ -11,6 +11,7 @@ const mobileNavStyles = {
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: "grey",
+  borderRadius: "10px",
 };
 
 const DropdownMobileMenu: React.FC<DropdownMobileMenuProps> = ({

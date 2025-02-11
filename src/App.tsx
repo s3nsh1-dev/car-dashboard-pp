@@ -8,11 +8,18 @@ import Footer from "./pages/Footer";
 
 const App: React.FC = () => {
   return (
-    <>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh", // Ensure full height of the viewport
+      }}
+    >
       <NavigationBar />
       <Box
         sx={{
-          mt: 12, // Gap between navbar and page content
+          flex: 1, // This makes sure the content takes available space
+          mt: 12, // Keeps space below navbar
         }}
       >
         <Routes>
@@ -21,7 +28,7 @@ const App: React.FC = () => {
         </Routes>
       </Box>
       <Footer />
-    </>
+    </Box>
   );
 };
 

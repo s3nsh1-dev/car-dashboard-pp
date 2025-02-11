@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router";
-import Home from "./pages/home/Home";
-import Dashboard from "./pages/dashboard/Dashboard";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 import NavigationBar from "./components/navbar/NavigationBar";
 import { Box } from "@mui/material";
 

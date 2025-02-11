@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import NavigationBar from "./components/navbar/NavigationBar";
 import { Box } from "@mui/material";
+import Footer from "./pages/Footer";
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
           <Route path='dashboard' element={<Dashboard />} />
         </Routes>
       </Box>
+      <Footer />
     </>
   );
 };

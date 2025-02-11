@@ -40,7 +40,7 @@ const NavigationBar = () => {
   return (
     <AppBar sx={appBarStyles}>
       <Toolbar sx={toolbarStyles}>
-        <Typography>Car Showroom</Typography>
+        <Typography>knowYourGarage!</Typography>
         <Box sx={{ display: { xs: "none", sm: "flex" } }}>
           <TraverseBox />
         </Box>

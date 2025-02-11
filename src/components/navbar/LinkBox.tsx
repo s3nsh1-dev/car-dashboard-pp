@@ -12,7 +12,10 @@ const LinkBox: React.FC<propTypes> = ({ goTo, children }) => {
     <Box
       component={Link}
       to={goTo}
-      sx={{ textDecoration: "none", margin: "0px 5px" }}
+      sx={{
+        textDecoration: "none",
+        margin: "0px 5px",
+      }}
     >
       {children}
     </Box>

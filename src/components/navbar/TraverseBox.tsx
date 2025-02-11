@@ -8,7 +8,7 @@ const TraverseBox = () => {
         <NavbarLinks>Home</NavbarLinks>
       </LinkBox>
       <LinkBox goTo='/dashboard'>
-        <NavbarLinks>Dashboard</NavbarLinks>
+        <NavbarLinks>Showroom</NavbarLinks>
       </LinkBox>
       <LinkBox goTo='/inventory'>
         <NavbarLinks>Inventory</NavbarLinks>

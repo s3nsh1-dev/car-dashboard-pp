@@ -1,5 +1,11 @@
+import FeedbackContainer from "../components/feedback/FeedbackContainer";
+
 const Feedback = () => {
-  return <div>Feedback</div>;
+  return (
+    <>
+      <FeedbackContainer />
+    </>
+  );
 };
 
 export default Feedback;

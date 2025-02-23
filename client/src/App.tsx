@@ -11,7 +11,7 @@ import Inventory from "./pages/Inventory";
 const App: React.FC = () => {
   return (
     <Box
-      className='container'
+      id='container'
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -20,7 +20,7 @@ const App: React.FC = () => {
     >
       <NavigationBar />
       <Box
-        className='content'
+        id='content'
         sx={{
           flex: 1, // This makes sure the content takes available space
           mt: 12, // Keeps space below navbar

@@ -1,16 +1,15 @@
-import React from "react";
 import { Box, Typography } from "@mui/material";
 
 const SiteDescription = () => {
   return (
-    <Box>
-      <Typography variant='h5' fontWeight='bold'>
+    <Box sx={{ margin: "auto", padding: "1rem 3rem" }}>
+      <Typography variant='h4' fontWeight='bold'>
         knowYourGarage! ~
         <Typography variant='h6' component={"span"}>
           &nbsp; Your Vehicle Research Companion
         </Typography>
       </Typography>
-      <Typography>
+      <Typography textAlign={"justify"} sx={{ marginTop: "1rem" }}>
         knowYourGarage delivers comprehensive vehicle information tailored to
         your specific needs. Whether you search by model name or brand, our
         advanced platform provides detailed specifications, performance metrics,

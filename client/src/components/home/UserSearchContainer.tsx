@@ -1,4 +1,4 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, TextField } from "@mui/material";
 
 const UserSearchContainer = () => {
   return (
@@ -27,11 +27,17 @@ const UserSearchContainer = () => {
           gap: "1rem",
         }}
       >
-        <Box sx={{ display: "flex", flexDirection: "row" }}>
-          <Typography sx={{ marginRight: "1rem" }}>
-            Search Your Model By ?
-          </Typography>
-          <Box component='select' sx={{ width: "150px" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: 1,
+          }}
+        >
+          <Typography>Search Your Model By? &nbsp;</Typography>
+          <Box component='select' sx={{ width: "150px", padding: "0 0.5rem" }}>
             <Box component='option'>Select</Box>
             <Box component='option'>select</Box>
             <Box component='option'>select</Box>
@@ -47,7 +53,7 @@ const UserSearchContainer = () => {
         </Box>
         <Box>
           <Typography component='label'>
-            <Typography component='input' />
+            <TextField label='Search' variant='outlined' />
           </Typography>
         </Box>
         <Box>
